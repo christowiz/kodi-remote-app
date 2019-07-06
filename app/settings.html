@@ -1,0 +1,125 @@
+<!doctype html>
+<html manifest="offline.appcache">
+    <head>
+        <title>Settings | Kassi - Kodi/XBMC Remote Control</title>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta name="viewport" content="width=320, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="description" content="Kodi/XBMC Remote Control using Web Sockets." />
+
+        <!-- Startup configuration -->
+        <link rel="manifest" href="manifest.json">
+
+        <meta name="theme-color" content="#3f880a">
+        <link rel="icon" sizes="196x196" href="icons/196.png">
+        <link rel="icon" sizes="128x128" href="icons/128.png">
+
+         <!-- apple iOS stuff //-->
+        <link rel="apple-touch-icon" href="icons/64.png" />
+        <link rel="apple-touch-icon-precomposed" href="icons/64.png" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <!-- meta ends //------------------->
+
+        <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+        <link rel="stylesheet" href="css/remote.css" type="text/css" />
+
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/enum.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/xbmc_socket.js"></script>
+        <script src="js/local_data.js"></script>
+        <script src="js/settings.js"></script>
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="header_title">Settings</div>
+            <div class="hr"></div>
+            <div id="message_success">
+                Connection Success!
+            </div>
+            <div id="message_wait">
+                Connecting.. Please wait..
+            </div>
+            <div id="message_missing_data">
+                Enter Connection Details!
+            </div>
+            <div id="message_fail">
+                Error! Cannot Connect! <br>
+                <span id="port_msg">
+                </span>
+            </div>
+            <div class="info">
+                <div class="details">
+                    <div class="details_name">
+                        Display Name
+                    </div>
+                    <div class="holo_field">
+                        <div class="holo-field-bracket"></div>
+                        <input type="text" id="displayNameValue" list="displayNameList" class="info_text" value="" placeholder="(optional)" />
+                        <datalist id="displayNameList">
+                            <!--<option value="Living Room TV">
+                            <option value="Bedroom TV">-->
+                        </datalist>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div class="details_name">
+                        Host or IP Address
+                    </div>
+                    <div class="holo_field">
+                        <div class="holo-field-bracket"></div>
+                        <input type="text" id="ipValue" class="info_text" />
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div class="details_name">
+                        TCP Port
+                    </div>
+                    <div class="holo_field">
+                        <div class="holo-field-bracket"></div>
+                        <input type="text" id="portValue" placeholder="9090" class="info_text" />
+                    </div>
+                </div>
+
+                <div class="details" style="padding-bottom: 20px;">
+                    <div class="tip_info">
+                    Note: To open TCP port you need to enable "Allow program on other system to control XBMC" option. You can find this in XBMC under, <br/><br/>
+                        System > Settings > Services > Remote Control
+                    </div>
+                </div>
+
+                <div class="details"
+                     style="margin: auto; text-align: center; padding-bottom: 0; margin-top: 0 !important;">
+
+                    <div class="button_holder" style="margin: auto; width: 320px;">
+                        <div style="float: left; display: block;">
+                            <button class="holo-button" id="saveButton" style="width: 100px; padding: 12px 20px;">Connect</button>
+                        </div>
+                        <div style="float: left; display: block; padding-left: 10px;">
+                            <button class="holo-button" id="deleteButton" style="width: 100px; padding: 12px 20px;">Delete</button>
+                        </div>
+                        <div style="float: left; display: block; padding-left: 10px;">
+                            <button class="holo-button" id="backButton" style="width: 100px; padding: 12px 20px;">Back</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div style="clear: both;"></div>
+                <div style="padding-top: 10px;">
+                    <div style="text-align: center; color: #676767; font-size: 12px;">
+                        version: 2.3.3
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>
