@@ -1,5 +1,5 @@
 {
-  "name": "Kassi",
+  "name": "kodi-remote-app",
   "version": "1.0.0",
   "description": "Electron app version of Kassi Chrome extension",
   "main": "main.js",
@@ -15,8 +15,8 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "Christopher Gwizdala",
+  "license": "MIT",
   "devDependencies": {
     "electron": "^5.0.6",
     "electron-packager": "^14.0.1",
