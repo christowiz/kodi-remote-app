@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . --overwrite --platform=darwin --arch=x64 --prune=true --out=releases",
-    "build:custom": "electron-packager-interactive",
+    "build": "electron-packager . --overwrite --platform=darwin --arch=x64 --prune=true --icon=app/icons/kodi-1024.icns --out=releases",
+    "build:custom": "electron-packager-interactive"
   },
   "keywords": [
     "Electron",
