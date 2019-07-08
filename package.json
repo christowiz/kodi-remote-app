@@ -1,5 +1,6 @@
 {
   "name": "kodi-remote-app",
+  "productName": "Kodi Remote",
   "version": "1.0.0",
   "description": "Electron app version of Kassi Chrome extension",
   "main": "main.js",
