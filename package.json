@@ -1,7 +1,7 @@
 {
   "name": "kodi-remote-app",
   "productName": "Kodi Remote",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Electron app version of Kassi Chrome extension",
   "main": "main.js",
   "scripts": {
@@ -10,11 +10,9 @@
     "build:custom": "electron-packager-interactive"
   },
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "Kodi",
+    "remote",
+    "app"
   ],
   "author": "Christopher Gwizdala",
   "license": "MIT",
